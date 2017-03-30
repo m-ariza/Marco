@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" type="text/javascript"  src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=+Roboto+Montserrat+Subrayada|Montserrat" rel="stylesheet"></head>
+<body>
+
+<div class="container">
+
+
+    <header class="page" id="zero">
+        <div id="player"></div>
+        <div class="logo">Marco Ariza</div>
+    </header>
+    <div class="nav">
+        <div class="menu-icon"><h4>MENU</h4></div>
+        <a href ="#zero" >ZERO</a>
+        <a href="#page1" >ME</a>
+        <a href="#page2" >MUSIC</a>
+        <a href="#page3">CYCLING</a>
+        <a href="#page4">PHOTO</a>
+    </div>
+    <div class="page" id="page1">
+        <div class="me"></div>
+        </div>
+        <div class="page" id="page2">2</div>
+        <div class="page" id="page3">3</div>
+        <div class="page" id="page4">4</div>
+
+<!--
+    <script type="text/javascript">
+        $('#player').click( function(event) {
+            event.preventDefault();
+        });
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                width: '100%',
+                videoId: '25wqvFnD3o4',
+                playerVars: {controls: 0, showinfo: 0},
+                events: {
+                    'onReady': onPlayerReady,
+                    'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            loopStart();
+            player.playVideo();
+            player.mute();
+        }
+        function loopStart() {
+            player.seekTo(255);   // Start at 7 seconds
+        }
+
+        function onPlayerPlaybackQualityChange(event) {
+            var playbackQuality = player.getPlaybackQuality();
+            var suggestedQuality = 'small';
+
+            console.log("Quality changed to: " + playbackQuality);
+
+            if (playbackQuality !== 'smallmedium') {
+                console.log("Setting quality to " + suggestedQuality);
+                event.target.setPlaybackQuality(suggestedQuality);
+            }
+        }
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                setTimeout(loopStart, 9000); // After 20 seconds, restart the loop
+            }
+        }
+    </script>
+-->
+    <script language="JavaScript" src="js/functions.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
