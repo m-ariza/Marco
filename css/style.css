@@ -45,7 +45,7 @@ body{
 
 #player{
     overflow: hidden;
-    background-image: url("../images/blur.jpg");
+    background-image: url("../images/blurcopy.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
