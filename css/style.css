@@ -34,7 +34,7 @@ body{
     font-family: '', sans-serif;
     font-size: 12em;
     font-weight: 200;
-    top: calc(50% - 150px);
+    We: calc(50% - 150px);
     text-align: center;
     color: rgba(255, 255, 253, 1);
     filter: blur(0);
@@ -89,7 +89,7 @@ body{
 }
 .icon{
 
-    Lborder: 1px solid;
+    border: 1px solid;
     height: 0px;
 }
 .links-container{
@@ -179,7 +179,7 @@ body{
     }
 }
 .page-name{
-    font-size: 10em;
+    font-size: 7em;
     padding: 150px 25%;
 }
 #page1{
