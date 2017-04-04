@@ -2,10 +2,18 @@ var $root = $('html, body');
 var $wHeight = $(window).height();
 var $wWidth = $(window).width();
 var $links = $('.link');
-var $menuBtn = $('.menu-icon');
-
-
-$($links).click(function() {
+var $menuBtn = $('.menu-icon');  
+ $menuBtn.click(function(){
+  var $wWidth = $(window).width();
+    if($wWidth >500 && $wWidth <820){
+        $('.links-container').animate({
+            'width': 'toggle'
+        });
+    }else {
+        $('.links-container').slideToggle(300);
+    }  
+ });
+$links.click(function() {
     var $wWidth = $(window).width();
 
     if($wWidth >500 && $wWidth <820){
