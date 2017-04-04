@@ -137,7 +137,7 @@ body{
     padding: 150px 25% 0 0;
 }
 .me{
-    top: 180vh;
+    top: 102vh;
     position: absolute;
     display: inline-block;
     left: calc(50% - 100px);
