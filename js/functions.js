@@ -15,12 +15,6 @@ $($links).click(function() {
     }else {
         $('.links-container').slideToggle(300);
     }
-});
-
-
-
-$links.click(function () {
-
     var href = $.attr(this, 'href');
 
     $root.animate({
@@ -28,7 +22,6 @@ $links.click(function () {
     },500, function () {
         window.location.hash = href;
     });
-    $('.links-container').slideToggle(300);
 });
 
 /*
