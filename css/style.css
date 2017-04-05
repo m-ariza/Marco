@@ -22,7 +22,6 @@ body{
 }
 
 .page {
-    overflow: hidden;
     height: 100vh;
     width: 100%;
 }
@@ -132,16 +131,24 @@ body{
 
 #page1{
     background-color: #2a2c3a;
+    width: 103%;
     }
 .page-name{
+    opacity: 0;
     font-size: 10em;
-    padding: 150px 25% 0 0;
+    padding: 250px 0 0 0;
+    transition: all 3s ease-out;
 }
+.is-showing{
+    opacity: 1;
+    display: block;
+}
+
 .me{
-    top: 180vh;
+    top: 102vh;
     position: absolute;
     display: inline-block;
-    left: calc(50% - 100px);
+    left: calc(50% - 70px);
     background-image: url('../images/hexagon-portrait.png');
     background-position: top;
     background-size: cover;
@@ -157,7 +164,8 @@ body{
 }
 
 .right-content{
-    padding: 30% 0 0 0;
+    overflow-x: hidden;
+    padding: 10% 0 0 0;
     line-height: 2.5;
     text-align: center;
     float: left;
@@ -244,6 +252,14 @@ body{
         font-size: 1.5em;
         width: 100vw;
         height: 10vh;
+    }
+    .me{
+        left: 45%;
+
+    }
+    #page1{
+        background-color: #2a2c3a;
+        width: 100%;
     }
     .left-title-page{
         float: left;
