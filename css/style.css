@@ -131,6 +131,7 @@ body{
 
 #page1{
     background-color: #2a2c3a;
+    width: 105%;
     }
 .page-name{
     font-size: 10em;
@@ -156,6 +157,7 @@ body{
 }
 
 .right-content{
+    overflow-x: hidden;
     padding: 10% 0 0 0;
     line-height: 2.5;
     text-align: center;
