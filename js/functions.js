@@ -7,13 +7,13 @@ var $menuBtn = $('.menu-icon');
 $(window).scroll(function(){
     var $wScroll=$(this).scrollTop();
     
-    if($wScroll >= $('.left-title-page').offset().top/2){
+    if($wScroll > $('.left-title-page').offset().top* .6){
 
-        $('.page-name').addClass('is-showing').show(100);
-
+        $('.page-name').addClass('is-showing');
         console.log('hello there!')
     }else{
-        $('.page-name').hide(100);
+        $('.page-name').removeClass('is-showing');
+
         console.log('ho there')
     }
 
