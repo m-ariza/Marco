@@ -264,7 +264,8 @@ body{
         height: 10vh;
     }
     .me{
-        left: 45%;
+        top: 65vh;
+        left: calc(50% - 100px);
 
     }
     #page1{
