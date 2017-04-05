@@ -22,6 +22,7 @@ body{
 }
 
 .page {
+    position: relative;
     height: 100vh;
     width: 100%;
 }
@@ -130,15 +131,24 @@ body{
 }
 
 #page1{
+
     background-color: #2a2c3a;
     width: 103%;
     }
 .page-name{
+    opacity: 0;
     font-size: 10em;
+    padding: 250px 0 0 500px;
+    transition: all 1.1s ease-out;
+}
+.is-showing{
+    opacity: 1;
     padding: 250px 0 0 0;
 }
+
 .me{
-    top: 102vh;
+    top: 2vh;
+    z-index: 98;
     position: absolute;
     display: inline-block;
     left: calc(50% - 70px);
