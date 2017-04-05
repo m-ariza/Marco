@@ -160,6 +160,7 @@ body{
     width: 200px;
 }
 .left-title-page{
+    overflow: hidden;
     float: left;
     width: 50%;
     height: 100vh;
