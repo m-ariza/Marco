@@ -7,13 +7,14 @@ var $menuBtn = $('.menu-icon');
 $(window).scroll(function(){
     var $wScroll=$(this).scrollTop();
     
-    if($wScroll > $('.left-title-page').offset().top* .6){
-
+    if($wScroll > $('.left-title-page').offset().top*.7){
+console.log($('.left-title-page').offset().top);
         $('.page-name').addClass('is-showing');
+        $('.right-content').fadeIn(500);
         console.log('hello there!')
     }else{
         $('.page-name').removeClass('is-showing');
-
+        $('.right-content').fadeOut(500);
         console.log('ho there')
     }
 
