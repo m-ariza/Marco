@@ -8,17 +8,14 @@ $(window).scroll(function(){
     var $wScroll=$(this).scrollTop();
     
     if($wScroll > $('.left-title-page').offset().top*.7){
-console.log($('.left-title-page').offset().top);
         $('.page-name').addClass('is-showing');
-        $('.right-content').fadeIn(500);
-        console.log('hello there!')
-    }else{
+        }else{
         $('.page-name').removeClass('is-showing');
-        $('.right-content').fadeOut(500);
-        console.log('ho there')
-    }
-
-
+        }
+    if($wScroll > $('right-content').offset().top*.7){
+        $('.right-content' > p).fadeIn(500);
+    }else{
+        $('.right-content' > p).fadeOut(500);
 });
 
 $menuBtn.click(function(){
