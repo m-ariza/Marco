@@ -16,6 +16,7 @@ $(window).scroll(function(){
         $('.right-content' > p).fadeIn(500);
     }else{
         $('.right-content' > p).fadeOut(500);
+    }
 });
 
 $menuBtn.click(function(){
