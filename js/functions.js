@@ -13,9 +13,9 @@ $(window).scroll(function(){
         $('.page-name').removeClass('is-showing');
         }
     if($wScroll > $('right-content').offset().top*.7){
-        $('.right-content' > p).fadeIn(500);
+        $('.right-content > p').fadeIn(500);
     }else{
-        $('.right-content' > p).fadeOut(500);
+        $('.right-content > p').fadeOut(500);
     }
 });
 
