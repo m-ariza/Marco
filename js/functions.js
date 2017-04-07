@@ -3,33 +3,31 @@ var $wHeight = $(window).height();
 var $wWidth = $(window).width();
 var $links = $('.link');
 var $menuBtn = $('.menu-icon');
+var $wScroll=$(window).scrollTop();
+var $leftPageTop = $('.left-title-page').offset().top;
+var $rightPageTop =  $('.right-content').offset().top;
+
+console.log($rightPageTop);
 
 $(window).scroll(function(){
-    var $wScroll=$(this).scrollTop();
-    var $leftPageTop = $('.left-title-page').offset().top;
-    var $rightPageTop =  $('.right-content').offset().top;
-    console.log('window scroll____________________________ ' + $wScroll);
-    console.log('right page offset.top ' + $rightPageTop);
-    console.log('left page offset.top ' + $leftPageTop) ;
+    var $wScroll=$(window).scrollTop();
+
+
 
 
     if($wScroll > $leftPageTop *.3){
         $('.page-name').addClass('is-showing');
-        console.log(' left is showing');
 
     }else{
         $('.page-name').removeClass('is-showing');
-        console.log('left not showing');
 
     }
 
 
     if($wScroll > $rightPageTop*.7){
         $('.about-me').fadeIn(900);
-        console.log('right fadeIn');
     }else{
         $('.about-me').fadeOut(500);
-        console.log('right fadeOut');
     }
 
 
@@ -58,10 +56,10 @@ $links.click(function() {
     }
 
     var href = $.attr(this, 'href');
-
     $root.animate({
         scrollTop: $(href).offset().top
-    },500, function () {
+    },0, function () {
         window.location.hash = href;
     });
+
 });
