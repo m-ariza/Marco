@@ -16,7 +16,9 @@ body{
 *{
     font-variant: character-variant();
     text-decoration: none;
-
+}
+a{
+    color: #b5b5af;
 }
 .container{
 }
@@ -169,8 +171,8 @@ body{
 
 .right-content{
     overflow-x: hidden;
-    padding: 5% 10% 5% 10%;
-    line-height: 1.5;
+    padding: 10% 10% 10% 10%;
+    line-height: 2;
     text-align: center;
     float: left;
     width: 50%;
@@ -183,6 +185,9 @@ body{
 }
 .about-me{
     display: none;
+}
+.about-me > p{
+    font-size: .7em;
 }
 
 #page2{
