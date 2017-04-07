@@ -6,17 +6,33 @@ var $menuBtn = $('.menu-icon');
 
 $(window).scroll(function(){
     var $wScroll=$(this).scrollTop();
-    
-    if($wScroll > $('.left-title-page').offset().top*.7){
+    var $leftPageTop = $('.left-title-page').offset().top;
+    var $rightPageTop =  $('.right-content').offset().top;
+    console.log('window scroll____________________________ ' + $wScroll);
+    console.log('right page offset.top ' + $rightPageTop);
+    console.log('left page offset.top ' + $leftPageTop) ;
+
+
+    if($wScroll > $leftPageTop *.3){
         $('.page-name').addClass('is-showing');
-        }else{
-        $('.page-name').removeClass('is-showing');
-        }
-    if($wScroll > $('right-content').offset().top*.7){
-        $('.right-content > p').fadeIn(500);
+        console.log(' left is showing');
+
     }else{
-        $('.right-content > p').fadeOut(500);
+        $('.page-name').removeClass('is-showing');
+        console.log('left not showing');
+
     }
+
+
+    if($wScroll > $rightPageTop*.7){
+        $('.about-me').fadeIn(900);
+        console.log('right fadeIn');
+    }else{
+        $('.about-me').fadeOut(500);
+        console.log('right fadeOut');
+    }
+
+
 });
 
 $menuBtn.click(function(){
