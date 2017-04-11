@@ -24,7 +24,7 @@ $(window).scroll(function(){
     }
 
 
-    if($wScroll > $rightPageTop*.7){
+    if($wScroll > $rightPageTop*.5){
         $('.about-me').fadeIn(900);
     }else{
         $('.about-me').fadeOut(500);
