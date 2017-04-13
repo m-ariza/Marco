@@ -33,7 +33,7 @@ a{
     width: 100%;
 }
 .logo{
-    display: none;
+    display: block;
     font-family: 'Poiret One', sans-serif;
     font-size: 12em;
     font-weight: 200;
@@ -42,7 +42,7 @@ a{
     color: rgba(255, 255, 253, 1);
     filter: blur(0);
     opacity: .8;
-    position: fixed;
+    position: relative;
     width: 100vw;
     height: auto;
 }
@@ -206,7 +206,7 @@ a{
         height: 100vh;
     }
     .logo{
-        display: none;
+        display: block;
     }
     .nav{
         width: auto;
@@ -252,7 +252,8 @@ a{
         height: 100vh;
     }
     .logo{
-        font-size: 7em;
+        font-size: 5em;
+        line-height: 1.7;
     }
     .menu-icon{
         display: block;
