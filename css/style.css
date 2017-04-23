@@ -211,7 +211,7 @@ a{
 }
 #audio-player-project{
     cursor:  pointer;
-
+    display: block;
     background-color: #2a2c3a;
     background-image: url("../images/audio-player.png");
     background-repeat: no-repeat;
