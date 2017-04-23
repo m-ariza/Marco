@@ -61,11 +61,12 @@ $links.click(function() {
     },0, function () {
         window.location.hash = href;
     });
+    /*
     $('#audio-player-project').click(function () {
         this.href = $(this).attr('data-url');
         console.log($(this).attr('data-url'));
         window.open(this.href);
         return false;
     })
-
+*/
 });
