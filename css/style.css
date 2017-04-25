@@ -55,16 +55,18 @@ a{
 #player{
     overflow: hidden;
     background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
+
     background-attachment: fixed;
     position: absolute;
     width: 100%;
     height: 100vh;
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
 }
 .background-overlay{
     position: absolute;
@@ -177,7 +179,7 @@ a{
 
 .right-content{
     overflow-x: hidden;
-    padding: 10% 10% 10% 10%;
+    padding: 2% 5% 10% 10%;
     line-height: 2;
     text-align: center;
     float: left;
