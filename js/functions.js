@@ -20,7 +20,7 @@ $(window).resize(function () {
     }
 });
 
-$('body').scroll(function(){
+$(window).scroll(function(){
     var $wScroll = $(window).scrollTop();
 
     var $aboutTitlePageTop = $('#about-title-page').offset().top;
@@ -75,14 +75,14 @@ $links.click(function() {
         $('.links-container').animate({
             'width': 'toggle'
         });
-    }else {
+    }else if ($wWidth < 500) {
         $('.links-container').slideToggle(300);
     }
 
     var href = $.attr(this, 'href');
     $root.animate({
         scrollTop: $(href).offset().top
-    },0, function () {
+    },400, function () {
         window.location.hash = href;
     });
     /*

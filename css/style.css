@@ -106,7 +106,7 @@ a{
 }
 .links-container{
     background-color: rgba(17, 26, 36, 0.06);
-    display: block;
+    display: none;
     width: 100%;
 }
 .link{
