@@ -240,6 +240,7 @@ a{
         height: 100vh;
     }
     .logo{
+        font-size: 7em;
         display: block;
     }
     .nav{
