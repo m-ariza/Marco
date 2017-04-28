@@ -90,7 +90,7 @@ a{
 }
 .menu-icon{
     text-align: center;
-    display: inline-block;
+    display: none;
     cursor: pointer;
     color: rgba(239, 239, 239, 0.92);
     opacity: 1;
@@ -206,7 +206,7 @@ a{
 #project-title-page{
     background-color: #040912;
 }
-#projects{
+#project-page{
     color: #000;
     background-color: aliceblue;
     padding: 1.5em;
@@ -217,11 +217,12 @@ a{
     cursor:  pointer;
     display: block;
     background-color: #2a2c3a;
-    background-image: url("../images/audio-player.png");
+    background-image: url("../images/audio-player.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 30vh;
+    height: 540px;
+    width:  550px;
 
 }
 #page3{
@@ -247,7 +248,7 @@ a{
         float: left;
     }
     .links-container{
-        display: block;
+        display: none;
         clear: both;
         background-color: rgba(0, 0, 0, 0.82);
         height: 100vh;

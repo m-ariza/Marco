@@ -34,11 +34,11 @@
 
     <div class="page" id="page1">
         <div class="me"></div>
-        <div class="left-title-page">
-            <h1 class="page-name">about</h1>
+        <div id="about-title-page" class="left-title-page">
+            <h1 class="page-name" id="about-name">about</h1>
         </div>
 
-        <div class="right-content">
+        <div class="right-content" id="about-page">
             <section class="about-me">
                 <q cite="Albert Einstein">The more I learn, the more I realize how much I don't know.</q>
                 -<a href="http://www.goodreads.com/author/show/9810.Albert_Einstein" target="_blank">Albert Einstein</a>
@@ -57,14 +57,16 @@
     </div>
     <div class="page" id="page2">
         <div class="left-title-page" id="project-title-page">
-            <h1 class="page-name">work</h1>
+            <h1 class="page-name" id="work-name">work</h1>
         </div>
-        <div  class="right-content" id="projects">
+        <div  class="right-content" id="project-page">
+            <section class="projects">
             A media player currently being used to promote a local NYC
-            artist's new music. Used the Web Audio API to get waveform data
+            artist's new music. I used the Web Audio API to get waveform data
             and draw a real-time oscilloscope using the <code>canvas</code> element
 
             <a href="https://m-ariza.github.io/audio/audio-player/" id="audio-player-project"></a>
+            </section>
         </div>
     </div>
 
