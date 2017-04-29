@@ -15,8 +15,7 @@ code{
     font-family: "Courier New", Courier, monospace;
 }
 body{
-
-
+    overflow-z: hidden;
 }
 *{
     text-decoration: none;
