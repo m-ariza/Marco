@@ -16,7 +16,6 @@ code{
 }
 body{
 
-    background-color: rgba(255, 22, 117, 0.24);
 
 }
 *{
@@ -34,7 +33,7 @@ a{
     width: 100%;
 }
 #zero{
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(0, 0, 0, 0.49);
     width: 100%;
 }
 .logo{
@@ -73,7 +72,7 @@ a{
 .background-overlay{
     position: absolute;
 
-    background: red; /* For browsers that do not support gradients */
+    background: rgba(255, 0, 0, 0); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* For Firefox 3.6 to 15 */
@@ -91,14 +90,14 @@ a{
     position: fixed;
 }
 .menu-icon{
+    position: relative;
     text-align: center;
     display: none;
     cursor: pointer;
-    color: rgba(239, 239, 239, 0.92);
+    color: rgba(171, 171, 171, 1);
     opacity: 1;
-    width:50px;
-    background-color: rgba(0, 0, 0, 0.8);
-    margin: 0;
+    background-color: rgba(40, 40, 40, 0.91);
+    min-width: 45px;
 
 }
 .icon{
@@ -119,7 +118,7 @@ a{
     margin: 10px 10px 0 0;
     display: inline-block;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 0.27);
+    background-color: rgba(0, 0, 0, 0);
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .link:hover{
@@ -137,7 +136,7 @@ a{
     100%{
         opacity: 1;
 
-        color: rgb(0, 176, 255);
+        color: rgb(255, 255, 255);
 
     }
 }
@@ -228,8 +227,33 @@ a{
 
 }
 #page3{
-    background-color: white;
+    font-size: 2em;
+    color: #b6b6b6;
+    background-color: #1f1f1f;
+    padding: 50px;
 }
+#email-icon{
+    font-size: 5em;
+}
+#email-icon:hover {
+    animation: spin 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+    @keyframes  spin {
+        0% {
+            transform: rotateY(0deg);
+        }
+        50%{
+            transform: scale(1.5, 1.5);
+        }
+        100%{
+            transform: rotateY(720deg);
+
+        }
+    }
+
 
 @media screen and (max-width: 820px) and (min-width: 500px){ /* medium sized screen*/
 
@@ -247,8 +271,8 @@ a{
         width: auto;
     }
     .menu-icon{
+        border: solid 1px white;
         display: block;
-        float: left;
     }
     .links-container{
         display: none;
@@ -297,10 +321,13 @@ a{
     .menu-icon{
         display: block;
         margin: 0 auto;
+        border: solid 1px gray;
 
     }
     .links-container{
         display: none;
+        background-color:rgba(0, 0, 0, 0.89);
+
     }
     .link{
         line-height: 2;
@@ -309,6 +336,7 @@ a{
         font-size: 1.5em;
         width: 100vw;
         height: 10vh;
+
     }
     .me{
         top: 65vh;
