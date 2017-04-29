@@ -59,7 +59,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-
     background-attachment: fixed;
     position: absolute;
     width: 100%;
@@ -71,12 +70,11 @@ a{
 }
 .background-overlay{
     position: absolute;
-
     background: rgba(255, 0, 0, 0); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(300deg, rgba(0, 59, 88, 0.43), rgba(35, 8, 0, 0.56), rgba(0, 0, 0, 0.53)); /* Standard syntax */
+    background: linear-gradient(300deg, rgba(0, 88, 132, 0.3), rgba(120, 16, 0, 0.38), rgba(150, 150, 150, 0.31)); /* Standard syntax */
     height: 100%;
     width: 100%;
 
@@ -90,6 +88,7 @@ a{
     position: fixed;
 }
 .menu-icon{
+    border: solid 1px gray;
     position: relative;
     text-align: center;
     display: none;
@@ -271,7 +270,6 @@ a{
         width: auto;
     }
     .menu-icon{
-        border: solid 1px white;
         display: block;
     }
     .links-container{
@@ -321,7 +319,6 @@ a{
     .menu-icon{
         display: block;
         margin: 0 auto;
-        border: solid 1px gray;
 
     }
     .links-container{
