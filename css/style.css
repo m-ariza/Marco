@@ -246,7 +246,7 @@ a{
             transform: rotateY(0deg);
         }
         50%{
-            transform: scale(1.5, 1.5);
+            
         }
         100%{
             transform: rotateY(720deg);
