@@ -52,7 +52,7 @@ $(window).scroll(function(){
     }else{
         $('.projects').fadeOut(500);
     }
-    var $wHeight = $(window).height();
+    var $wHeight => $(window).height();
     if($wScroll > $wHeight){
         $('.links-container').css({
             'background-color':'rgba(0, 0, 0, 0.89)'
