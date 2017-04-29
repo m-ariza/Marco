@@ -18,6 +18,7 @@ $(window).resize(function () {
             'display','none'
         )
     }
+
 });
 
 $(window).scroll(function(){
@@ -25,13 +26,13 @@ $(window).scroll(function(){
 
     var $aboutTitlePageTop = $('#about-title-page').offset().top;
     var $rightAboutPageTop =  $('#about-page').offset().top;
-    if($wScroll > $aboutTitlePageTop *.4){
+    if($wScroll > $aboutTitlePageTop *.5){
         $('#about-name').addClass('is-showing');
 
     }else{
         $('#about-name').removeClass('is-showing');
-
     }
+
     if($wScroll > $rightAboutPageTop*.5){
         $('.about-me').fadeIn(900);
     }else{
@@ -42,16 +43,26 @@ $(window).scroll(function(){
     var $projectPageTop = $('#project-page').offset().top;
     if($wScroll > $workTitlePageTop *.8){
         $('#work-name').addClass('is-showing');
-
     }else{
         $('#work-name').removeClass('is-showing');
-
     }
+
     if($wScroll > $projectPageTop*.8){
         $('.projects').fadeIn(900);
     }else{
         $('.projects').fadeOut(500);
     }
+    var $wHeight = $(window).height();
+    if($wScroll > $wHeight){
+        $('.links-container').css({
+            'background-color':'rgba(0, 0, 0, 0.89)'
+        });
+    }else {
+        $('.links-container').css({
+            'background-color':'rgba(0, 0, 0, 0.0)'
+        });
+    }
+
 
 
 });
