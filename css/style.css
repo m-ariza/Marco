@@ -16,7 +16,6 @@ code{
 }
 body{
     overflow-z: hidden;
-    width: 100%;
 }
 *{
     text-decoration: none;
@@ -25,6 +24,8 @@ a{
     color: #b5b5af;
 }
 .container{
+    width: 100%;
+
 }
 
 .page {
