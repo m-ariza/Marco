@@ -97,8 +97,7 @@ a{
     opacity: 1;
     background-color: rgba(40, 40, 40, 0.91);
     min-width: 45px;
-    max-width: 100%;
-
+    max-width: 98%;
 }
 .icon{
     border: 0;
