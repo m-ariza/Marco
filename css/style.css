@@ -15,7 +15,6 @@ code{
     font-family: "Courier New", Courier, monospace;
 }
 body{
-    width: 100vw;
     overflow-x: hidden;
 }
 *{
@@ -25,7 +24,7 @@ a{
     color: #b5b5af;
 }
 .container{
-    width: 100vw;
+    width: 100%;
 
 }
 
